@@ -1,12 +1,14 @@
 #ifndef ___RECURSIVE_POTPOURRI
 #define ___RECURSIVE_POTPOURRI
 
-struct CalculationResults {
+struct CalculationResults
+ {
+   int* num_factorials;
   int no_of_nums;
-  int no_of_sums;
-  int* sums;
   int* binary_sums;
-  int* num_factorials;
+  int* sums;
+  int no_of_sums;
+
 };
 
 int calc_array_size(int n);
